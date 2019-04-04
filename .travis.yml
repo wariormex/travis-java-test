@@ -1,6 +1,7 @@
 language: java
 jdk: oraclejdk8
 services: mongodb
+script: mvn exec:java -Dexec.mainClass="com.mayab.calidad.travis.JavaMongoDbDemo"
 after_success: echo "I'm done"
 
 notifications:
