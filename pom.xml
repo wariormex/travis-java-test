@@ -14,6 +14,11 @@
     </properties>
 
     <dependencies>
+	<dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>mongo-java-driver</artifactId>
+    <version>3.10.1</version>
+       </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -60,6 +65,9 @@
                 </executions>
             </plugin>
         </plugins>
+   
+        <finalName>${project.artifactId}</finalName>
+   
     </build>
 
     <reporting>
